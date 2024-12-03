@@ -1,0 +1,59 @@
+.favourites-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.favourites-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.favourites-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.favourite-item {
+  border: 1px solid #000000;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 150px;
+  text-align: center;
+  background: #000000;
+}
+
+.favourite-image {
+  width: 100%; /* Ensure the image takes up full width of its container */
+  max-width: 150px; /* Limit the maximum width of the image */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image is cropped to fit the container without distortion */
+}
+
+
+.favourite-item p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.favorite-btn {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.favorite-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.favorite-btn.added {
+  background-color: #ff6f61; /* Цвет для кнопки, если продукт в избранном */
+  color: white;
+}

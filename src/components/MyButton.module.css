@@ -1,0 +1,12 @@
+.myBtn {
+    color: teal; 
+    font-size: 14px;
+    background: transparent; 
+    border: 1px solid teal; 
+    cursor: pointer; 
+}
+
+.myBtn:hover {
+    background: teal; 
+    color: white; 
+}
