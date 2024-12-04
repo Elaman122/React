@@ -7,6 +7,7 @@ import Favourites from './pages/Favourites';
 import NavBar from './components/NavBar';
 import { Route, Routes } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
+import CRUDPage from './pages/CRUDPage';
 
 function App() {
   return (
@@ -14,10 +15,11 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/drinks" element={<Products />} />
+        <Route path="/products" element={<Products />} />
         <Route path="/products/:id" element={<ProductDetail />} />
-        <Route path="/login" element={<LoginRegister />} /> {/* Add login route */}
-        <Route path="/favourites" element={<Favourites />} /> {/* Add favourites route */}
+        <Route path="/login" element={<LoginRegister />} />
+        <Route path="/favourites" element={<Favourites />} />
+        <Route path="/crud" element={<CRUDPage />} /> {/* Добавленный маршрут */}
       </Routes>
     </AuthProvider>
   );

@@ -10,9 +10,10 @@ const NavBar = () => {
 
     const handleSearch = (e) => {
         e.preventDefault();
-        navigate(`/drinks?search=${searchTerm}`);
-        setSearchTerm(''); // Clear search input
+        navigate(`/products?search=${searchTerm}`); // Updated to /products
+        setSearchTerm('');
     };
+    
 
     return (
         <div>
@@ -46,8 +47,9 @@ const NavBar = () => {
                     </div>
                     <ul>
                         <li><NavLink to='/'>Home</NavLink></li>
-                        <li><NavLink to='/drinks'>Products</NavLink></li>
-                        <li><NavLink to='/favourites'>Favourites</NavLink></li>
+                        <li><NavLink to='/products'>Products</NavLink></li>
+                        <li><NavLink to='/favourites'>Saved</NavLink></li>
+                        <li><NavLink to='/crud'>Manage Items</NavLink></li> {/* Новая ссылка */}
                         {user ? (
                             <>
                                 <li onClick={logout}><NavLink to="#">Logout</NavLink></li>

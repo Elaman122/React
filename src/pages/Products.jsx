@@ -66,7 +66,7 @@ const Products = () => {
                                     <span className="product-category">{product.category}</span>
                                     <p className="product-price">${product.price.toFixed(2)}</p>
                                 </div>
-                                <Link to={`/products/${product.id}`}>
+                                <Link to={`/products/${product.id}`}> {/* Updated to /products */}
                                     <div className="btn">View Details</div>
                                 </Link>
                             </div>
